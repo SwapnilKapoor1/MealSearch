@@ -8,12 +8,14 @@ function renderFavouriteMeals() {
             savedFavouriteMeals.forEach(meal => {
                 const li = document.createElement('li');
                 li.textContent = meal.strMeal;
-    
+                
+                // adding the remove button
                 const removeButton = document.createElement('button');
                 removeButton.className="removeButton";
                 removeButton.textContent = 'Remove from Favourites';
                 removeButton.addEventListener('click', () => removeFromFavourites(meal));
                 
+                // creating container for list item and remove button
                 const container=document.createElement("div");
                 container.className="favouriteList";
                 li.appendChild(removeButton);
@@ -22,6 +24,7 @@ function renderFavouriteMeals() {
             });
         }
     }
+    // remove the meal from the list
     function removeFromFavourites(meal) {
         const index = savedFavouriteMeals.findIndex(favMeal => favMeal.idMeal === meal.idMeal);
         if (index !== -1) {

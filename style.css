@@ -39,6 +39,7 @@ nav a{
     height:25px; 
     width:27%;
 }
+
 /* results */
 #results{
     margin-left:8%;
@@ -75,6 +76,7 @@ nav a{
     margin-top:4%;
     margin-left:1.5%;
 }
+
 /* Detail Page */
 #detailBody{
     background-image: linear-gradient(to right,cyan,blue);
