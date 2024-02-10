@@ -11,6 +11,7 @@ const savedFavouriteMeals = JSON.parse(localStorage.getItem('favouriteMeals')) |
 
 // add listener to search for fetching the data
 searchInput.addEventListener("input",searchMeals);
+searchInput.addEventListener("click",searchMeals);
 async function searchMeals() {
     currentSearchTerm = searchInput.value.trim();
     
