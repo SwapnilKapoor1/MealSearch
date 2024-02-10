@@ -49,7 +49,8 @@ function displaySearchResults(meals) {
             searchResults.appendChild(div);
         });
     } else {
-        searchResults.innerHTML = 'OOPS! No results found. We will update our meal list'; //if data not available through API
+         //if data not available through API
+        searchResults.innerHTML = 'OOPS! No results found. We will update our meal list';
     }
 }
 
