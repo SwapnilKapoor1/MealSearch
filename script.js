@@ -7,7 +7,7 @@ const message=document.getElementById('message');
 let currentSearchTerm = '';
 
 // Load favourite meals from localStorage
-const savedFavouriteMeals = JSON.parse(localStorage.getItem('favouriteMeals')) || [];
+let savedFavouriteMeals = JSON.parse(localStorage.getItem('favouriteMeals')) || [];
 
 // add listener to search for fetching the data
 searchInput.addEventListener("input",searchMeals);
