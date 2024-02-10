@@ -13,8 +13,7 @@ async function showMealDetails(mealId) {
             <h3>Cuisine : <span style=color:red>${meal.strArea}</span></h3>
             <h3>Instructions to Cook :</h3>
             <p>${meal.strInstructions}</p>
-            <h3> <a href="\/\/www.youtube.com\/watch?v=VVnZd8A84z4" target=_blank>Link to watch on Youtube</a></h3>
-           
+            <h3> <a href="${meal.strYoutube}" target=_blank>Link to watch on Youtube</a></h3>
         `;
         
 }

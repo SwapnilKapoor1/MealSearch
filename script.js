@@ -7,7 +7,7 @@ const message=document.getElementById('message');
 let currentSearchTerm = '';
 
 // Load favourite meals from localStorage
-const savedFavouriteMeals = JSON.parse(localStorage.getItem('favouriteMeals')) || new Set();
+const savedFavouriteMeals = JSON.parse(localStorage.getItem('favouriteMeals')) || [];
 
 
 searchInput.addEventListener("input",searchMeals);
@@ -52,7 +52,7 @@ function displaySearchResults(meals) {
 
 
 function addToFavourites(meal) {
-    savedFavouriteMeals.add(meal);
+    savedFavouriteMeals.push(meal);
     localStorage.setItem('favouriteMeals', JSON.stringify(savedFavouriteMeals));
     message.setAttribute("style","visibility:visible");
     setTimeout(()=>{
