@@ -58,6 +58,7 @@ function displaySearchResults(meals) {
 // adding the meal to the list
 
 function addToFavourites(meal) {
+    savedFavouriteMeals = savedFavouriteMeals || [];
     savedFavouriteMeals.push(meal.strMeal);
     localStorage.setItem('favouriteMeals', JSON.stringify(savedFavouriteMeals));
     message.setAttribute("style","visibility:visible"); //displaying the message for succesful addition
