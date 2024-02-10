@@ -7,7 +7,7 @@ function renderFavouriteMeals() {
     
             savedFavouriteMeals.forEach(meal => {
                 const li = document.createElement('li');
-                li.textContent = meal.strMeal;
+                li.textContent = meal;
                 
                 // adding the remove button
                 const removeButton = document.createElement('button');
