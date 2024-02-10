@@ -15,13 +15,14 @@ searchInput.addEventListener("click",searchMeals);
 async function searchMeals() {
     currentSearchTerm = searchInput.value.trim();
     
-    if (currentSearchTerm.length > 2) {
+    if (currentSearchTerm.length >0) {
         const response = await fetch(`https://themealdb.com/api/json/v1/1/search.php?s=${currentSearchTerm}`);
         const data = await response.json();
         displaySearchResults(data.meals);
         
      } else {
-        searchResults.innerHTML = 'Please add more than 2 letters in the search box to see accurate suggestions';
+        searchResults.innerHTML="";
+        searchResults.innerHTML = 'Please enter some meal name in search bar to get result';
     }
 }
 
