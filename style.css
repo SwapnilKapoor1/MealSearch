@@ -10,107 +10,7 @@ nav{
 }
 nav a{
     padding:5px;
-    text-decoration: none;/* Home Page */
-    #Home{
-        background-image: linear-gradient(to right,cyan,blue);
-    }
-    
-    /* navbar */
-    nav{
-        margin-left:40%;  
-        padding-top:10px;
-    }
-    nav a{
-        padding:5px;
-        text-decoration: none;
-        margin:1%;
-        font-size: larger;
-        font-weight: bolder;
-        color:black;
-    }
-    
-    /* mealsearch */
-    #search h1,#results h2{
-        width:25%;
-        text-align: center; 
-    }
-    #results h2{
-        margin-left:-2.7%;
-    }
-    #search{
-        margin-left:40.5%;
-        margin-top:3%;
-        padding-bottom:3%;
-    }
-    #search h1{
-        margin-left:1.4%;
-    }
-    #searchInput{
-        background-color: lightgrey;
-        border:0px;
-        height:25px; 
-        width:27%;
-    }
-    /* results */
-    #results{
-        margin-left:8%;
-        margin-top:2%;
-    }
-    .result-li{
-        padding:8px;
-        text-decoration: none;
-        color:rgb(9, 9, 95);
-        
-    }
-    .result-div{
-        position:relative;
-        margin:4px;
-    }
-    #favouriteButton{
-        position:absolute;
-        right:30rem;
-    }
-    
-    /* Favaourite page */
-    #favouriteBody{
-        background-image: linear-gradient(to right,cyan,blue);
-    }
-    .removeButton{
-        position:absolute;
-        right:30rem; 
-    }
-    .favouriteList{
-        position:relative;
-        margin:6px;
-    }
-    #favouriteBody h2{
-        margin-top:4%;
-        margin-left:1.5%;
-    }
-    /* Detail Page */
-    #detailBody{
-        background-image: linear-gradient(to right,cyan,blue);
-    }
-    .dishImage{
-        margin-left:33%;
-        max-height:55vh;
-        min-width:37vw;
-        border:1.5px solid black;
-        box-shadow:3px 3px 10px lightblue;
-    }
-    .dishName{
-        text-align: center;
-    }
-    
-    /* message */
-    #message{
-        font-weight:bolder;
-        visibility:hidden;
-        position:fixed;
-        bottom:2%;
-        left:40%;
-        background-color: lightgreen;
-    }
+    text-decoration: none;
     margin:1%;
     font-size: larger;
     font-weight: bolder;
@@ -196,6 +96,6 @@ nav a{
     visibility:hidden;
     position:fixed;
     bottom:2%;
-    left:45%;
+    left:40%;
     background-color: lightgreen;
 }
